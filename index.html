@@ -350,7 +350,13 @@ nav{padding:16px 5%}nav div.links{display:none}section{padding:70px 5%}
     grid-template-columns:1fr;
   }
 }
-
+.contact-buttons{
+  display:flex;
+  gap:16px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
 
     </style>
 </head>
@@ -524,7 +530,11 @@ nav{padding:16px 5%}nav div.links{display:none}section{padding:70px 5%}
 </section>
 
 <section class="fade"><div class="title"><span>Ishonch</span><h2>Mijozlar fikri</h2></div><div class="testimonials"><div class="testimonial">“Dizaynlar juda sifatli va professional chiqdi. Ish tez va aniq bajarildi.”</div><div class="testimonial">“Brendimiz uchun premium ko‘rinish yaratib berdi. Natijadan mamnunmiz.”</div><div class="testimonial">“SMM postlarimiz oldingidan ancha kuchli ko‘rina boshladi.”</div></div></section>
-<section id="contact" class="contact fade"><div class="contact-box"><h2 id="contactTitle">Biznesingizni vizual kuchga aylantiramiz</h2><p id="contactText">Logo, SMM post, packaging, banner yoki web dizayn kerak bo‘lsa, Telegram orqali bog‘laning.</p><a id="telegramContact" href="#" target="_blank" class="btn btn-main">Telegramga yozish</a><a class="btn btn-main" target="_blank" href="https://www.behance.net/nodirbekyunusov1">Behance profil</a></div></section>
+<section id="contact" class="contact fade"><div class="contact-box"><h2 id="contactTitle">Biznesingizni vizual kuchga aylantiramiz</h2><p id="contactText">Logo, SMM post, packaging, banner yoki web dizayn kerak bo‘lsa, Telegram orqali bog‘laning.</p>
+    <div class="contact-buttons">
+        <a id="telegramContact" href="#" target="_blank" class="btn btn-main">Telegramga yozish</a>
+        <a class="btn btn-main" target="_blank" href="https://www.behance.net/nodirbekyunusov1">Behance profil</a>
+    </div>
 <footer>© 2026 <span id="footerName">Nodirbek Yunosov</span>. Barcha huquqlar himoyalangan.</footer>
 
 <script>
@@ -626,5 +636,6 @@ function showOnScroll(){fades.forEach(el=>{if(el.getBoundingClientRect().top<win
 window.addEventListener("scroll",showOnScroll); showOnScroll();
 render();
 </script>
+    
 </body>
 </html>
